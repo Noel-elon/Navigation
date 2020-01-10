@@ -9,15 +9,17 @@
         tools:context=".MainActivity">
 
         <fragment
-            android:id="@+id/titleFragment"
-            android:name="com.example.navigation.TitleFragment"
+            android:id="@+id/mynavigation"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout="@layout/fragment_title" />
+            app:navGraph="@navigation/mynavigation"
+            app:defaultNavHost="true"
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

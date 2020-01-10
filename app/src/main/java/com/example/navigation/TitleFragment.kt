@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingComponent
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.example.navigation.databinding.FragmentTitleBinding
 
 /**
@@ -22,7 +23,15 @@ class TitleFragment : Fragment() {
     ): View? {
         //Inflating the fragment XML... also using databinding
 val binding : FragmentTitleBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_title, container, false)
+
+        binding.Titlebutton.setOnClickListener { view: View ->
+            Navigation.findNavController(view).navigate(R.id.action_titleFragment_to_twoFragment)
+        }
+        //or we could use .....setOnClickListener(Navigation.createNavigateOnclickListener(R.id.........))
         return  binding.root
+
+
+
         }
     }
 
