@@ -19,7 +19,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navGraph="@navigation/mynavigation"
             app:defaultNavHost="true"
-             />
+            tools:layout="@layout/fragment_title" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

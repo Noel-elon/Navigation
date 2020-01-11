@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
-import com.example.navigation.databinding.FragmentTitleBinding
+import com.example.navigation.databinding.FragmentTwoBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -19,7 +19,7 @@ class Fragment_two : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-val binding : FragmentTitleBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_two, container, false)
+val binding : FragmentTwoBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_two, container, false)
         return binding.root
         }
     }
